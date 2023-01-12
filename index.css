@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #d9cdf7;
+}
+#card {
+  display: grid;
+  grid-template-columns: max-content;
+  grid-template-areas: "A B";
+
+  gap: 50px;
+
+  place-content: center;
+  height: 100vh;
+
+  font-family: "Lato", sans-serif;
+}
+#card div {
+  /*border: 1px solid red;*/
+}
+.produto {
+  /*border: 1px solid red;*/
+  grid-area: A;
+}
+.produto div {
+  /*border: 1px solid red;*/
+  width: 450px;
+}
+.produto img {
+  width: 100%;
+  transition: all 0.5s;
+}
+#gif {
+  display: none;
+}
+.produto i {
+  cursor: pointer;
+  display: inline;
+  float: right;
+}
+.produto #close {
+  display: none;
+}
+.produto button {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+.info {
+  grid-area: B;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-transform: uppercase;
+  color: #271a45;
+}
+.info div * {
+  margin: 12px 0 0 0;
+}
+.info h1 {
+  font-family: "Crimson Pro", serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 32px;
+  line-height: 32px;
+}
+.info span {
+  font-size: 10px;
+}
+.info p {
+  font-size: 12px;
+}
+.info button {
+  text-transform: uppercase;
+  margin-top: 12px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: 1px solid #271a45;
+  border-radius: 25px;
+  background-color: transparent;
+
+  transition: all 0.5s;
+}
+.info button:hover {
+  background-color: #271a45;
+  color: white;
+}
